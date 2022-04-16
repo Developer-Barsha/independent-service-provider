@@ -8,9 +8,35 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 12px 80px;
+    position: relative;
+}
+
+header h2{
+    font-weight: 700;
+}
+
+header h2 span{
+    color: #13db74;
 }
 
 nav{
     display: flex;
     gap: 20px;
+}
+
+@media only screen and (max-width:900px){
+    header{
+        padding: 12px 50px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 120%;
+        right: 30px;
+        background-color: white;
+        padding: 20px;
+        transition: 0.9s;
+    }
 }

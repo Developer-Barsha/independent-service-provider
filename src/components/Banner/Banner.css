@@ -1,6 +1,7 @@
 .banner{
     background-color: #c2fcdf;
     justify-content: space-between;
+    min-height: 400px;
 }
 
 .banner div{
@@ -8,8 +9,28 @@
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    padding: 20px;
 }
 
 .slogan span{
     color: #13db74;
+}
+
+@media only screen and (max-width:900px){
+    .banner{
+        flex-direction: column;
+    }
+    .banner h1{
+        font-size: 25px;
+    }
+    .banner div{
+        width: 100%;
+    }
+
+    .banner div:nth-child(2){
+        order: 1;
+    }
+    .banner div:nth-child(1){
+        order: 2;
+    }
 }

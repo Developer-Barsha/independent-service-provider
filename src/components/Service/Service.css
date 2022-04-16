@@ -8,10 +8,31 @@
 .daisy img{
     border-radius: 20px;
 }
+
 .daisy h1{
     color: #13db74;
 }
+
 .daisy h1, .daisy h3{
     text-align: center;
     margin-top: 5px;
+}
+
+.primary-btn{
+    display: flex;
+    background-color: #13db74;
+    color: white;
+    padding: 6px 13px;
+    border-radius: 20px;
+    border: 2px solid #13db74;
+    gap:10px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.primary-btn:hover{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.213);
+    color: #13db74;
+    transition: 0.5s;
 }
