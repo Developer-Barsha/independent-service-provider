@@ -1,0 +1,15 @@
+.banner{
+    background-color: #c2fcdf;
+    justify-content: space-between;
+}
+
+.banner div{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.slogan span{
+    color: #13db74;
+}

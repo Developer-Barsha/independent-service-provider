@@ -1,0 +1,17 @@
+.daisy{
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #c2fcdf;
+    border-radius: 30px;
+}
+.daisy img{
+    border-radius: 20px;
+}
+.daisy h1{
+    color: #13db74;
+}
+.daisy h1, .daisy h3{
+    text-align: center;
+    margin-top: 5px;
+}
