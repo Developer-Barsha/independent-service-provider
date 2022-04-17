@@ -3,21 +3,21 @@
         "id":1,
         "img":"https://i.ibb.co/NTQ5sxf/icons8-potted-plant-96.png",
         "name":"Wildlife Photography",
-        "price":550,
+        "price":400,
         "description":"A popular genre of photography which means photography of the life of animals in their natural settings"
     },
     {
         "id":2,
         "img":"https://i.ibb.co/QdtvQr9/icons8-portrait-96.png",
         "name":"Portrait Photography",
-        "price":550,
+        "price":350,
         "description":"Portrait Photography is a type of photography that represents of a person usually showing the face."
     },
     {
         "id":3,
         "img":"https://i.ibb.co/5hHnY1D/icons8-beach-umbrella-96.png",
         "name":"Travel Photography",
-        "price":550,
+        "price":500,
         "description":"Capturing images that expresses the feeling of a time and place. It's about bringing the world to people."
     }
 ]

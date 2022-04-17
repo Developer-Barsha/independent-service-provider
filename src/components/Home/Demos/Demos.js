@@ -19,7 +19,7 @@ const Demos = () => {
 
                 <div className='flex flex-col gap-3 demos-part'>
                     <div className='short-img flex justify-center'>
-                        <img src="https://i.pinimg.com/originals/5d/da/fd/5ddafd227b61c04442cf0d9ea36b35f1.jpg" alt="" />
+                        <img src="https://images.wallpaperscraft.com/image/single/daisies_flowers_flowerbed_109298_3840x2400.jpg" alt="" />
                     </div>
 
                     <div className='long-img flex justify-center gap-3'>
