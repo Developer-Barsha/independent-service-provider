@@ -25,6 +25,10 @@ nav{
     gap: 20px;
 }
 
+header a:hover{
+    color: pink;
+}
+
 @media only screen and (max-width:900px){
     header{
         padding: 12px 50px;
