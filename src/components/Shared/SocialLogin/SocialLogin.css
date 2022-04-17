@@ -5,16 +5,15 @@
 }
 .social-line div{
     width: 23%;
-    height: 2px;
+    height: 1px;
     background-color: #555;
 }
 
 .social-btn{
     background-color: #fff;
-    padding: 8px 15px;
-    width: 100%;
+    padding: 8px 20px;
     border-radius: 50px;
-    border: 2px solid #4787F1;
+    border: 2px solid #FFCB2D;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,26 +23,25 @@
 
 .social-btn:hover{
     background-color: #f9ebc0;
-    border: 2px solid #FFCB2D;
     transition: 0.5s;
 }
 
-.social-btn:nth-child(3){
+.social-btn:nth-child(2){
     background-color: #1771E6;
     border: 2px solid #1771E6;
     color: white;
 }
 
-.social-btn:nth-child(3):hover{
+.social-btn:nth-child(2):hover{
     background-color: #86aff2;
 }
 
-.social-btn:nth-child(4){
+.social-btn:nth-child(3){
     background-color: #000;
     border: 2px solid #000;
     color: white;
 }
-.social-btn:nth-child(4):hover{
+.social-btn:nth-child(3):hover{
     background-color: #3a3937;
 }
 
@@ -51,8 +49,17 @@
     width: 25px;
 }
 
-@media only screen and (max-width:800px){
-    .social{
-        width: 80%;
+@media only screen and (min-width:800px) and (max-width:1100px){
+    .btns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+    }
+}
+@media only screen and (max-width:799px){
+    .btns{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3px;
     }
 }
