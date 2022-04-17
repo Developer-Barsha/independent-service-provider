@@ -11,7 +11,8 @@ const SocialLogin = () => {
 
     useEffect(() => {
         if (error || gitError) {
-            toast(error?.message || gitError)
+            toast(error?.message || gitError?.message)
+            console.log(error?.message || gitError?.message);
         }
     }, [error, gitUser])
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRightIcon } from '@heroicons/react/solid';
-// import girl from '../../images/girl2.png'
+import banner from '../../../images/banner.png'
 import './Banner.css'
 
 const Banner = () => {
@@ -11,7 +11,7 @@ const Banner = () => {
                 <h1 className='text-4xl slogan'>
                     There is one thing the <span>photograph</span> must contain, the humanity of the <span>moment</span>
                 </h1>
-                <p>Lorem ipsum dolor sit amet barsha</p>
+                <p>Welcome to my Bloomy Captures</p>
                 <button className='explore-btn mx-0'>
                     Explore More
                     <ArrowRightIcon width={20}></ArrowRightIcon>
@@ -19,7 +19,7 @@ const Banner = () => {
                 </section>
             </div>
             <div>
-                <img src='https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="" />
+                <img src={banner} alt="" />
             </div>
         </div>
     );

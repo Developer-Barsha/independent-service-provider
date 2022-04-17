@@ -18,6 +18,7 @@ const Header = () => {
             <nav className=''>
                 <CustomLink to={'/'}>Home</CustomLink>
                 <CustomLink to={'/about'}>About</CustomLink>
+                <CustomLink to={'/blogs'}>Blogs</CustomLink>
                 <CustomLink to={'/signup'}>Signup</CustomLink>
                 
                 {

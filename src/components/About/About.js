@@ -1,4 +1,5 @@
 import React from 'react';
+import dream from '../../images/dream.png'
 import './About.css'
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
 
                 <p>My dream is to be a web developer and that's why I enrolled in the web development course by Jhankar Mahbub. This course taught me so many things. Now I want to complete this course successfully and get a job. I want to make my parents proud of me. Inshallah, I will be able to make my dream true.</p>
             </div>
-            <img src="https://i.pinimg.com/originals/d5/b8/60/d5b860a2d385bacdfab680299145bb66.jpg" alt="" />
+            <img src={dream} alt="" />
         </div>
     );
 };

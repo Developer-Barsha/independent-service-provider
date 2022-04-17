@@ -1,0 +1,19 @@
+[
+    {
+        "id":1,
+        "question":"Difference between authorization and authentication",
+        "answer":"Authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. The situation is like that of an airline that needs to determine which people can come on board."
+    },
+
+    {
+        "id":2,
+        "question":"Why are you using firebase? What other options so you have to implement authentication?",
+        "answer":"Authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. The situation is like that of an airline that needs to determine which people can come on board."
+    },
+
+    {
+        "id":3,
+        "question":"What other services does firebase provide other than authentication?",
+        "answer":"Authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. The situation is like that of an airline that needs to determine which people can come on board."
+    }
+]
