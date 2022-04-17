@@ -14,6 +14,7 @@ const Header = () => {
                 <CustomLink to={'/'}>Home</CustomLink>
                 <CustomLink to={'/banner'}>Home</CustomLink>
                 <CustomLink to={'/login'}>Login</CustomLink>
+                <CustomLink to={'/signup'}>Signup</CustomLink>
             </nav>}
 
             <button onClick={()=>setShowMenu(!showMenu)}>

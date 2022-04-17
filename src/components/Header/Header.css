@@ -9,6 +9,7 @@ header{
     justify-content: space-between;
     padding: 12px 80px;
     position: relative;
+    background-color: #c2fcdf;
 }
 
 header h2{

@@ -1,38 +1,49 @@
-.daisy{
+.service{
     width: 300px;
-    padding: 10px;
+    padding: 15px;
     margin: 0 auto;
     border: 1px solid #c2fcdf;
-    border-radius: 30px;
-}
-.daisy img{
-    border-radius: 20px;
-}
-
-.daisy h1{
-    color: #13db74;
-}
-
-.daisy h1, .daisy h3{
-    text-align: center;
-    margin-top: 5px;
-}
-
-.primary-btn{
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 2px 2px 30px rgb(196, 191, 191);
+}
+
+.service:hover{
     background-color: #13db74;
     color: white;
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
+.service:hover .price{
+    color: black;
+}
+.service:hover .service-btn{
+    color: #000;
+}
+
+.service img{
+    width: 96px;
+    border-radius: 10px;
+    background-color: #c2fcdf;
+}
+
+.service-btn{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.394);
+    color: #13db74;
     padding: 6px 13px;
     border-radius: 20px;
     border: 2px solid #13db74;
     gap:10px;
-    margin-top: 15px;
     align-items: center;
+    width: 160px;
+    justify-content: center;
 }
 
-.primary-btn:hover{
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.213);
-    color: #13db74;
+.service-btn:hover{
     transition: 0.5s;
+    transform: translateX(10px);
 }

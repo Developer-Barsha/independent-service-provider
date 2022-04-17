@@ -5,12 +5,14 @@ import './Service.css'
 const Service = ({service}) => {
     const {name, price, img, description} = service;
     return (
-        <div className='daisy'>
+        <div className='service'>
             <img src={img} alt="" />
-            <h1 className='text-3xl'>{name}</h1>
-            <h3 className='text-2xl'>Price: ${price}</h3>
+            <div>
+            <h1 className='text-2xl'>{name}</h1>
+            <h3 className='text-xl text-green-500 price'>Price: ${price}</h3>
+            </div>
             <p>{description}</p>
-            <button className='primary-btn mx-auto'>
+            <button className='service-btn'>
                 Choose Plan
                 <ArrowRightIcon width={20}></ArrowRightIcon>
             </button>

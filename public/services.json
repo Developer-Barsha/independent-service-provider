@@ -1,23 +1,23 @@
 [
     {
         "id":1,
-        "img":"https://images.unsplash.com/photo-1592339078319-1f8cc9d67888?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&w=1000&q=80",
-        "name":"Natural Photography",
+        "img":"https://i.ibb.co/NTQ5sxf/icons8-potted-plant-96.png",
+        "name":"Wildlife Photography",
         "price":550,
-        "description":"Daisy flowers symbolize a new beginning, with fresh hopes. The cyclicality of the daisy flower suggests new beginnings."
+        "description":"A popular genre of photography which means photography of the life of animals in their natural settings"
     },
     {
         "id":2,
-        "img":"https://images.unsplash.com/photo-1592339078319-1f8cc9d67888?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&w=1000&q=80",
-        "name":"Natural Photography",
+        "img":"https://i.ibb.co/QdtvQr9/icons8-portrait-96.png",
+        "name":"Portrait Photography",
         "price":550,
-        "description":"Daisy flowers symbolize a new beginning, with fresh hopes. The cyclicality of the daisy flower suggests new beginnings."
+        "description":"Portrait Photography is a type of photography that represents of a person usually showing the face."
     },
     {
         "id":3,
-        "img":"https://images.unsplash.com/photo-1592339078319-1f8cc9d67888?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&w=1000&q=80",
-        "name":"Natural Photography",
+        "img":"https://i.ibb.co/5hHnY1D/icons8-beach-umbrella-96.png",
+        "name":"Travel Photography",
         "price":550,
-        "description":"Daisy flowers symbolize a new beginning, with fresh hopes. The cyclicality of the daisy flower suggests new beginnings."
+        "description":"Capturing images that expresses the feeling of a time and place. It's about bringing the world to people."
     }
 ]
