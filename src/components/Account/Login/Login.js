@@ -28,7 +28,7 @@ const Login = () => {
         if (user) {
             navigate(from, { replace: true })
         }
-    }, [error])
+    }, [user])
 
     const login = async (e) => {
         e.preventDefault();
@@ -37,10 +37,18 @@ const Login = () => {
         await signInWithEmailAndPassword(email, password);
     }
 
-    const sendResetEmail = async () => {
+    const sendResetEmail = async (e) => {
+        e.preventDefault();
         const email = emailRef.current.value;
         await sendPasswordResetEmail(email);
-        alert('Sent email');
+        
+        if(email!==''){
+            toast('Reset email sent')
+        }
+
+        if(resetError){
+            toast('invalid email')
+        }
     }
 
     return (

@@ -6,7 +6,7 @@ import Home from './components/Home/Home/Home';
 import Login from './components/Account/Login/Login';
 import Signup from './components/Account/Signup/Signup';
 import NotFound from './components/NotFound/NotFound';
-import Checkout from './components/Checkout/Checkout';
+import Checkout from './components/Account/Checkout/Checkout';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
