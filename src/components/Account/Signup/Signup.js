@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import SocialLogin from '../Shared/SocialLogin/SocialLogin';
+import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import './Signup.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import auth from '../../firebase.init';
+import auth from '../../../firebase.init';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {

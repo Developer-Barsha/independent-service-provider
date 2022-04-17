@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import SocialLogin from '../Shared/SocialLogin/SocialLogin';
+import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Login.css'
-import auth from '../../firebase.init';
+import auth from '../../../firebase.init';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { Link, useNavigate } from 'react-router-dom';

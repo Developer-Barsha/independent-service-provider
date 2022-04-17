@@ -17,7 +17,7 @@ const Header = () => {
             {showMenu && 
             <nav className=''>
                 <CustomLink to={'/'}>Home</CustomLink>
-
+                <CustomLink to={'/about'}>About</CustomLink>
                 <CustomLink to={'/signup'}>Signup</CustomLink>
                 
                 {
