@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 import { MenuAlt1Icon, XIcon } from '@heroicons/react/solid';
 import './Header.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
+import auth from '../../firebase.init';
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const [user] = useAuthState(auth);
+
     return (
         <header>
             <h2 className='text-2xl'><span>Bloomy</span> Captures</h2>
@@ -12,8 +17,15 @@ const Header = () => {
             {showMenu && 
             <nav className=''>
                 <CustomLink to={'/'}>Home</CustomLink>
-                <CustomLink to={'/login'}>Login</CustomLink>
+
                 <CustomLink to={'/signup'}>Signup</CustomLink>
+                
+                {
+                user ? 
+                <button onClick={()=>signOut(auth)} className='logout-btn'>Log Out</button>
+                : 
+                <CustomLink to={'/login'}>Login</CustomLink>
+                }
             </nav>}
 
             <button onClick={()=>setShowMenu(!showMenu)}>
