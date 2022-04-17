@@ -50,3 +50,9 @@
 .social-btn img{
     width: 25px;
 }
+
+@media only screen and (max-width:800px){
+    .social{
+        width: 80%;
+    }
+}
