@@ -36,3 +36,9 @@ input[type=submit]:hover{
     transition: 0.5s;
     color: white;
 }
+
+@media only screen and (max-width:500px){
+    .login form{
+        width: 80%;
+    }
+}

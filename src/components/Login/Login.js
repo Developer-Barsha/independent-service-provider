@@ -5,6 +5,7 @@ import './Login.css'
 const Login = () => {
     return (
         <div className='login my-16'>
+            <h1 className="text-4xl text-center mb-6 text-green-500">Login</h1>
             <form>
                 <input type="email" placeholder='Your Email' />
                 <input type="password" placeholder='Password' />

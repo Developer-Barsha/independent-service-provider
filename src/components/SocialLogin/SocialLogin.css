@@ -1,5 +1,52 @@
-.social-login div{
-    width: 22%;
+.social{
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+}
+.social-line div{
+    width: 23%;
     height: 2px;
     background-color: #555;
+}
+
+.social-btn{
+    background-color: #fff;
+    padding: 8px 15px;
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid #4787F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.social-btn:hover{
+    background-color: #f9ebc0;
+    border: 2px solid #FFCB2D;
+    transition: 0.5s;
+}
+
+.social-btn:nth-child(3){
+    background-color: #1771E6;
+    border: 2px solid #1771E6;
+    color: white;
+}
+
+.social-btn:nth-child(3):hover{
+    background-color: #86aff2;
+}
+
+.social-btn:nth-child(4){
+    background-color: #000;
+    border: 2px solid #000;
+    color: white;
+}
+.social-btn:nth-child(4):hover{
+    background-color: #3a3937;
+}
+
+.social-btn img{
+    width: 25px;
 }
