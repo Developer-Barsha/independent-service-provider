@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import './Signup.css';
@@ -8,13 +8,19 @@ import auth from '../../../firebase.init';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification : true});
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const navigate = useNavigate();
 
     const nameRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
+
+    useEffect(()=>{
+        if (error || updateError) {
+            toast(error?.message || updateError?.message);
+        }
+    } ,[error, updateError])
 
     if (user) {
         navigate('/');
