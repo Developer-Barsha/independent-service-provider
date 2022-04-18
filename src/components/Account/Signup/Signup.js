@@ -27,6 +27,7 @@ const Signup = () => {
         navigate('/');
     }
 
+    // create user with email and password and update name
     const signup = async (e) => {
         e.preventDefault();
         const name = nameRef.current.value;

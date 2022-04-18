@@ -43,16 +43,17 @@ const Login = () => {
 
 
     // send reset email handler
-    const sendResetEmail = async (e) => {
-        e.preventDefault();
+    const sendResetEmail = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-
-        if (resetError) {
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Reset email Sent')
+        }
+        else if(resetError){
             toast('Invalid email')
         }
         else {
-            toast('Reset email Sent')
+            toast('Invalid email')
         }
 
 

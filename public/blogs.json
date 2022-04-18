@@ -14,6 +14,6 @@
     {
         "id":3,
         "question":"What other services does firebase provide other than authentication?",
-        "answer":"Services Firebase provide other than authentication: 1. Cloud Firestore, 2. Cloud Functions, 3. Hosting, 4. Google Analytics, 5. Cloud storage, 6. Cloud Messaging. 7.Predictions, 8. Firebase Realtime Database, 9. Dynamic Links, 10. Remote Config"
+        "answer":"The services Google Firebase provides other than authentication: 1. Cloud Firestore, 2. Cloud Functions, 3. Hosting(We can host our web apps in seconds without any cost), 4. Google Analytics(This service provides free, unlimited reporting), 5. Cloud storage, 6. Cloud Messaging. 7.Predictions, 8. Firebase Realtime Database, 9. Dynamic Links, 10. Remote Config( This let' you get visibility and fine-grained control over your app's behavior and appearance)"
     }
 ]
