@@ -11,12 +11,12 @@
  - You can't access checkout page unless you are logged in
 
 ## Technologies Used: ##
- 1 React to create this website
- 2 Used react firebase hooks to implement authentication
- 3 Used heroicons to show icons
- 4 And toastify to show error 
- 5 Tailwind framework to add style
- 6 React router to set routes
+  * React to create this website
+  * Used react firebase hooks to implement authentication
+  * Used heroicons to show icons
+  * And toastify to show error 
+  * Tailwind framework to add style
+  * React router to set routes
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
