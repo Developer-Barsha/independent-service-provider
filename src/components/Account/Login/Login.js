@@ -18,6 +18,8 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
 
+
+    // show error handler
     useEffect(() => {
         if (error) {
             toast(error.message);
@@ -30,6 +32,8 @@ const Login = () => {
         }
     }, [user])
 
+
+    // login handler
     const login = async (e) => {
         e.preventDefault();
         const email = emailRef.current.value;
@@ -37,18 +41,27 @@ const Login = () => {
         await signInWithEmailAndPassword(email, password);
     }
 
+
+    // send reset email handler
     const sendResetEmail = async (e) => {
         e.preventDefault();
         const email = emailRef.current.value;
         await sendPasswordResetEmail(email);
-        
-        if(email!==''){
-            toast('Reset email sent')
+
+        // if(email!==''){
+        //     toast('Reset email Sent')
+        // }else{
+        //     toast('Invalid email')
+        // }
+
+        if (resetError) {
+            toast('Invalid email')
+        }
+        else {
+            toast('Reset email Sent')
         }
 
-        if(resetError){
-            toast('invalid email')
-        }
+
     }
 
     return (
@@ -56,8 +69,8 @@ const Login = () => {
             <ToastContainer />
             <h1 className="text-4xl text-center mb-6 text-green-500">Login</h1>
             <form>
-                <input type="email" name='email' ref={emailRef} placeholder='Your Email' />
-                <input type="password" name='password' ref={passwordRef} placeholder='Password' />
+                <input type="email" name='email' ref={emailRef} placeholder='Your Email' required />
+                <input type="password" name='password' ref={passwordRef} placeholder='Password' required />
                 <input onClick={login} className='submit-btn' type="submit" value="Login" />
 
                 <p>Forgot Password? <button onClick={sendResetEmail} style={{ color: "#2ad37e" }}>Reset Password</button> </p>

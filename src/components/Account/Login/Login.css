@@ -38,7 +38,7 @@ input[type=submit]:hover{
 }
 
 @media only screen and (max-width:800px){
-    .login form{
-        width: 80%;
+    .form form{
+        width: 85%;
     }
 }

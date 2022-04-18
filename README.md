@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Bloomy Captures
+
+## Live Link: [Click here to open live site](https://bloomy-captures.netlify.app/)
+
+## Website Features: ##
+ - A website of photographer who loves to capture nature
+ - A blog page for blogs and about page to tell you about my dream
+ - A demo section to show some recent works
+ - You can login/signup by using the forms or the buttons listed under form
+ - If you are logged-in then navbar will have a option for you to logout
+ - You can't access checkout page unless you are logged in
+
+## Technologies Used: ##
+ 1 React to create this website
+ 2 Used react firebase hooks to implement authentication
+ 3 Used heroicons to show icons
+ 4 And toastify to show error 
+ 5 Tailwind framework to add style
+ 6 React router to set routes
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
