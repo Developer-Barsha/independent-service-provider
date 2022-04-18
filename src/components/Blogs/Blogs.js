@@ -3,6 +3,7 @@ import Blog from '../Blog/Blog';
 import './Blogs.css'
 
 const Blogs = () => {
+    // fetching and setting blogs to state
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
         fetch('blogs.json')

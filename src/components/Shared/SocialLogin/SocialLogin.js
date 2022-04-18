@@ -4,11 +4,24 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import './SocialLogin.css'
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
 
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location?.state?.from?.pathname || '/';
+
+    //navigating if user is found
+    useEffect(() => {
+        if (user) {
+            navigate(from, { replace: true })
+        }
+    }, [user])
+
+    //showing error
     useEffect(() => {
         if (error || gitError) {
             toast(error?.message || gitError?.message)
@@ -45,7 +58,7 @@ const SocialLogin = () => {
                     </button>
                 </div>
             </div>
-            
+
         </section>
     );
 };

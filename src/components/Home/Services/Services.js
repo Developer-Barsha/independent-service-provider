@@ -3,6 +3,8 @@ import Service from '../Service/Service';
 import './Services.css'
 
 const Services = () => {
+
+    //fetching and setting services to state
     const [services, setServics] = useState([]);
     useEffect(() => {
         fetch('services.json')

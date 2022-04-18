@@ -26,6 +26,7 @@ const Login = () => {
         }
     }, [error])
 
+    // navigating when user is found
     useEffect(() => {
         if (user) {
             navigate(from, { replace: true })
@@ -49,7 +50,7 @@ const Login = () => {
             await sendPasswordResetEmail(email);
             toast('Reset email Sent')
         }
-        else if(resetError){
+        else if (resetError) {
             toast('Invalid email')
         }
         else {

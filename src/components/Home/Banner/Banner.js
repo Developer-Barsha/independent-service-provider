@@ -6,6 +6,7 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div className='flex banner justify-center items-center px-5'>
+            {/* banner text */}
             <div>
                 <section className='flex flex-col gap-5'>
                 <h1 className='text-4xl slogan'>
@@ -18,6 +19,8 @@ const Banner = () => {
                 </button>
                 </section>
             </div>
+
+            {/* banner image */}
             <div>
                 <img src={banner} alt="" />
             </div>

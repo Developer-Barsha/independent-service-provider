@@ -14,6 +14,7 @@ const Header = () => {
         <header>
             <h2 className='text-2xl'><span>Bloomy</span> Captures</h2>
 
+            {/* header nav */}
             {showMenu && 
             <nav className=''>
                 <CustomLink to={'/'}>Home</CustomLink>
@@ -29,6 +30,7 @@ const Header = () => {
                 }
             </nav>}
 
+            {/* menu hide and show icon */}
             <button onClick={()=>setShowMenu(!showMenu)}>
                 {showMenu ?
                     <XIcon width={30} />

@@ -7,6 +7,7 @@ const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
     const location = useLocation();
 
+    //loading spinner on reload
     if (loading) {
         return (
             <section className='d-flex text-center mt-16' style={{minHeight:"300px"}}>
@@ -22,9 +23,11 @@ const RequireAuth = ({ children }) => {
         )
     }
 
+    //nagating to login if user is not found
     if (!user) {
         return <Navigate to={'/login'} state={{ from: location }} replace></Navigate>
     }
+
     return children;
 };
 

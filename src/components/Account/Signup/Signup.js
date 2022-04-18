@@ -8,7 +8,7 @@ import auth from '../../../firebase.init';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification : true});
+    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const navigate = useNavigate();
 
@@ -17,12 +17,13 @@ const Signup = () => {
     const passwordRef = useRef('');
 
     // show error handler
-    useEffect(()=>{
+    useEffect(() => {
         if (error || updateError) {
             toast(error?.message || updateError?.message);
         }
-    } ,[error, updateError])
+    }, [error, updateError])
 
+    // navigating to home when user is found
     if (user) {
         navigate('/');
     }
@@ -43,10 +44,10 @@ const Signup = () => {
             <h1 className="text-4xl text-center mb-6 text-green-500">Register</h1>
             <form>
                 <input type="text" ref={nameRef} name='name' placeholder='Your Name' />
-                <input type="email" ref={emailRef} name='email' placeholder='Your Email' required/>
-                <input type="password" ref={passwordRef} name='password' placeholder='Password' required/>
+                <input type="email" ref={emailRef} name='email' placeholder='Your Email' required />
+                <input type="password" ref={passwordRef} name='password' placeholder='Password' required />
                 <input onClick={signup} className='submit-btn' type="submit" value="Sign Up" />
-                <p>Have an account? <Link to={'/login'} style={{color:"#2ad37e", borderBottom:"2px solid #2ad37e"}}>Login here</Link> </p>
+                <p>Have an account? <Link to={'/login'} style={{ color: "#2ad37e", borderBottom: "2px solid #2ad37e" }}>Login here</Link> </p>
             </form>
 
             <SocialLogin></SocialLogin>
