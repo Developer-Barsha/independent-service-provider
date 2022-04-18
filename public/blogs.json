@@ -2,18 +2,18 @@
     {
         "id":1,
         "question":"Difference between authorization and authentication",
-        "answer":"Authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. The situation is like that of an airline that needs to determine which people can come on board."
+        "answer":"Authentication checks that users are who they say they are. Authentication is the process of identifying a user. If users given credentials match with the credentials stored in a database/server of authorized users then the user is allowed to access the resource. But Authorization comes after authentication. Authorization is a security mechanism that determines the access level of the user."
     },
 
     {
         "id":2,
-        "question":"Why are you using firebase? What other options so you have to implement authentication?",
-        "answer":"Authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. The situation is like that of an airline that needs to determine which people can come on board."
+        "question":"Why are you using firebase? What other options do you have to implement authentication??",
+        "answer":"I am using firebase because of the advantages it provides. It let's you create application without backend server and provides real-time database management API, faster than any backend web services etc. Some other options to implement authentication: 1.Cookie-Based authentication, 2.Third party access(OAuth, API-token), 3.OpenId, 4.SAML, 5.Token-Based authentication,"
     },
 
     {
         "id":3,
         "question":"What other services does firebase provide other than authentication?",
-        "answer":"Authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. The situation is like that of an airline that needs to determine which people can come on board."
+        "answer":"Services Firebase provide other than authentication: 1. Cloud Firestore, 2. Cloud Functions, 3. Hosting, 4. Google Analytics, 5. Cloud storage, 6. Cloud Messaging. 7.Predictions, 8. Firebase Realtime Database, 9. Dynamic Links, 10. Remote Config"
     }
 ]

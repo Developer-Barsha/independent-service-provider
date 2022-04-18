@@ -1,0 +1,9 @@
+.blog{
+    border: 1px solid #C2FCDF;
+    padding: 20px 15px;
+}
+.blog:hover{
+    box-shadow: 2px 2px 20px #555;
+    transition: 0.5s;
+    background-color: #cbfde4aa;
+}
